@@ -6,6 +6,9 @@ All of my linting packages (standardized for all of my repositories). They're **
   <a href="https://github.com/semantic-release/semantic-release">
     <img alt="Semantic Release Badge" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
   </a>
+  <a href="https://github.com/mitchbne/linting/actions/workflows/deploy.yml">
+    <img alt="Deploy" src="https://github.com/mitchbne/linting/actions/workflows/deploy.yml/badge.svg?branch=main">
+  </a>
 </div>
 
 #### Packages
