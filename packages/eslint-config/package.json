@@ -1,0 +1,41 @@
+{
+  "name": "@mitchbne/eslint-config",
+  "version": "0.0.1",
+  "description": "My ESLint config",
+  "main": "index.js",
+  "author": "Mitch Smith <mitchpsmith1998@gmail.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchbne/linting.git",
+    "directory": "packages/eslint-config"
+  },
+  "scripts": {
+    "build": "yarn pack",
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint-config-next": "^11.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-plugin-compat": "^3.9.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-underscore-to-lodash": "^0.0.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=7",
+    "jest": ">=26",
+    "react": ">=17",
+    "react-dom": ">=17",
+    "typescript": ">=4.3",
+    "next": ">=11"
+  }
+}

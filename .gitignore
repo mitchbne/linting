@@ -1,0 +1,5 @@
+node_modules/
+*-error.log
+.eslintcache
+# None the build package files shouldn't be included
+**.tgz

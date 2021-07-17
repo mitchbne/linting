@@ -1,0 +1,66 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NODE_VERSION: 15.x
+
+jobs:
+  sanity-chek:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Use cached node_modules
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/yarn.lock') }}-${{ env.NODE_VERSION }}
+          restore-keys: |
+            nodeModules-
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+        env:
+          CI: true
+      - name: Build
+        run: yarn run build
+        env:
+          CI: true
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [sanity-chek]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Use cached node_modules
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/yarn.lock') }}-${{ env.NODE_VERSION }}
+          restore-keys: |
+            nodeModules-
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+        env:
+          CI: true
+      - name: Create release
+        run: yarn release
+        env:
+          CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
