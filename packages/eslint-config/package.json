@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Mitch Smith <mitchpsmith1998@gmail.com>",
   "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mitchbne/linting.git",

@@ -4,6 +4,9 @@
   "repository": "https://github.com/mitchbne/linting",
   "private": true,
   "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public"
+  },
   "workspaces": [
     "packages/*"
   ],
