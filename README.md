@@ -1,6 +1,6 @@
 ## Linting ✨
 
-All of my linting packages (standardized for all of my repositories). They're **very** opinionated - use as you wish.
+My linting rules as NPM packages (standardized for all of my repositories). They're **very** opinionated - use as you wish.
 
 <div style="display: flex;">
   <a href="https://github.com/semantic-release/semantic-release">
