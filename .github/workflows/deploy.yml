@@ -55,7 +55,7 @@ jobs:
         env:
           CI: true
       - name: Publish pacakges
-        run: yarn release
+        run: yarn release --no-verify-access
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
