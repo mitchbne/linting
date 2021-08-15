@@ -1,4 +1,5 @@
 module.exports = {
+  $schema: "http://json.schemastore.org/eslintrc",
   env: {
     browser: true,
     es6: true,
