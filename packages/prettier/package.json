@@ -1,6 +1,6 @@
 {
   "name": "@mitchbne/prettier",
-  "version": "1.0.2",
+  "version": "0.0.0",
   "description": "My prettier configuration",
   "main": "index.js",
   "author": "Mitch Smith <mitchpsmith1998@gmail.com>",
@@ -12,9 +12,5 @@
     "type": "git",
     "url": "git+https://github.com/mitchbne/linting.git",
     "directory": "packages/prettier"
-  },
-  "scripts": {
-    "build": "yarn pack",
-    "release": "semantic-release -e semantic-release-monorepo"
   }
 }

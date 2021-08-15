@@ -1,6 +1,6 @@
 {
   "name": "@mitchbne/eslint-config",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "My ESLint configuration",
   "main": "index.js",
   "author": "Mitch Smith <mitchpsmith1998@gmail.com>",
@@ -12,10 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/mitchbne/linting.git",
     "directory": "packages/eslint-config"
-  },
-  "scripts": {
-    "build": "yarn pack",
-    "release": "semantic-release -e semantic-release-monorepo"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
