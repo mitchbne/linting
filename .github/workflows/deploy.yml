@@ -58,3 +58,5 @@ jobs:
         run: yarn install
         env:
           CI: true
+      - name: Publish pacakges
+        run: npx lerna publish --yes from-package
