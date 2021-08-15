@@ -12,6 +12,5 @@
     "type": "git",
     "url": "git+https://github.com/mitchbne/linting.git",
     "directory": "packages/prettier"
-  },
-  "gitHead": "d53bf2eb75f529e87d3eff49415332a610ef11b5"
+  }
 }
