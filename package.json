@@ -15,7 +15,9 @@
   },
   "scripts": {
     "postinstall": "husky install",
-    "lint": "eslint --ext=.js --quiet packages"
+    "lint": "eslint --ext=.js --quiet packages",
+    "bump": "npx lerna version",
+    "release": "npx lerna publish --yes from-package"
   },
   "devDependencies": {
     "eslint": "^7.30.0",
