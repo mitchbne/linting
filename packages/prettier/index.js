@@ -5,7 +5,7 @@ module.exports = {
   quoteProps: "preserve",
   semi: false,
   arrowParens: "always",
-  printWidth: 140,
+  printWidth: 120,
   htmlWhitespaceSensitivity: "css",
   singleQuote: false,
   trailingComma: "es5",
