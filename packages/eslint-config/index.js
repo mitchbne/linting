@@ -115,7 +115,7 @@ module.exports = {
       },
     ],
     "import/no-duplicates": 2,
-    "import/extensions": [2, "never", { json: "always" }],
+    "import/extensions": [2, "never", { json: "always", css: "always", scss: "always", "svg": "always" }],
     "import/newline-after-import": 2,
     "import/prefer-default-export": 0,
     "react/jsx-wrap-multilines": 2,
