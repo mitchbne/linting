@@ -38,7 +38,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
-  plugins: ["react", "react-hooks", "import", "eslint-comments", "@typescript-eslint"],
+  plugins: ["react", "react-hooks", "import", "eslint-comments", "@typescript-eslint", "prettier"],
   rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
