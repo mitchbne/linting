@@ -10,9 +10,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "engines": {
-    "node": ">= 15.0.0"
-  },
   "scripts": {
     "postinstall": "husky install",
     "lint": "eslint --ext=.js --quiet packages",
