@@ -197,7 +197,13 @@ module.exports = {
     "no-useless-computed-key": 2,
     "no-unexpected-multiline": "error",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
     "react/no-typos": 2,
     "react/jsx-no-target-blank": 2,
     "no-unused-expressions": 0,
