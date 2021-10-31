@@ -117,7 +117,7 @@ module.exports = {
     "import/no-duplicates": 2,
     "import/extensions": [2, "never", { json: "always" }],
     "import/newline-after-import": 2,
-    "import/prefer-default-export": 2,
+    "import/prefer-default-export": 0,
     "react/jsx-wrap-multilines": 2,
     "react/display-name": 1,
     "react/jsx-tag-spacing": [
