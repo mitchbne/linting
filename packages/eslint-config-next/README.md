@@ -25,6 +25,6 @@ Add this to your ESLint configuration file:
 
 ```
 {
-  "extends": "@mitchbne/eslint-config"
+  "extends": "@mitchbne/eslint-config-next"
 }
 ```
