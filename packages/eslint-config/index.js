@@ -17,14 +17,7 @@ module.exports = {
       },
     },
   },
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:import/typescript",
-    "prettier",
-    "next",
-    "next/core-web-vitals",
-  ],
+  extends: ["eslint:recommended", "plugin:react/recommended", "plugin:import/typescript", "prettier"],
   globals: {
     JSX: "readonly",
     Atomics: "readonly",
