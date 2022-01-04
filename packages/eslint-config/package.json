@@ -1,6 +1,6 @@
 {
   "name": "@mitchbne/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "My ESLint configuration for general TypeScript and JavaScript projects",
   "main": "index.js",
   "author": "Mitch Smith <mitchpsmith1998@gmail.com>",
